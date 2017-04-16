@@ -1,3 +1,17 @@
+/* Addon: Custom CSS Text */
+.arrow.down:after {
+    content: "Bogey Content";
+}
+
+div.titlebox span.number:after {
+    content: " Golfers";
+}
+
+.titlebox .users-online .number:after {
+    content: " On the Green";
+}
+/* End Addon */
+
 /* Addon: Custom Colors */
 /* Buttons */
 .morelink, .side .titlebox .md h3 a, .drop-choices a.choice:hover, .submit-page #newlink.submit.content ul.tabmenu.formtab,
@@ -23,3 +37,15 @@
     color: $green;
 }
 /* End Addon */
+
+
+/* Addon: Infobox ReColor */
+.side .titlebox h1.redditname:before {
+    background-color: $green;
+}
+
+.side .titlebox h1.redditname a, .titlebox span.subscribers {
+    color: #fff;
+}
+/* End Addon */
+
