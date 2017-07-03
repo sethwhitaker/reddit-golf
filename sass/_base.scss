@@ -2,6 +2,9 @@ body {
 	background-color: $light-green;
 }
 
+.link .entry .tagline a.author {
+    margin-right: 0.5em;
+}
 /* Addon: Custom CSS Text */
 .arrow.down:after {
     content: "Bogey Content";
@@ -53,3 +56,42 @@ div.titlebox span.number:after {
 }
 /* End Addon */
 
+
+/* Addon: Custom Snoo */
+#header-img.default-header, #header-img {
+    background: url(%%snoo%%) no-repeat 0px 0px;
+    padding-left: 80px;
+    height: 111px;
+}
+
+    #header-img.default-header:hover, #header-img:hover {
+        background-position: 0px 0px;
+    }
+
+#header-bottom-left {
+    top: 31px;
+}
+/* End Addon */
+
+/* Addon: Custom Subreddit Title */
+/* This is the one in the header */
+#header .pagename a {
+    height: 111px;
+    width: 235px;
+    background-image: url(%%title%%);
+    background-repeat: no-repeat;
+    background-size: auto 111px;
+    text-indent: -9999px;
+}
+
+/* This is the one in the sidebar */
+.side .titlebox h1.redditname a {
+    display: block;
+    height: 22px;
+    width: 176px;
+    background-image: url(%%title-sidebar%%);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    text-indent: -9999px;
+}
+/* End Addon */
