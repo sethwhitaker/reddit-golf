@@ -95,3 +95,35 @@ div.titlebox span.number:after {
     text-indent: -9999px;
 }
 /* End Addon */
+
+.arrow.up:after {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1000;
+    margin: -6px 0 0 32px;
+    padding: 12px;
+    background: #fd471e;
+    border-radius: 2px;
+    color: rgba(255,255,255,0);
+    content: "Birdie Content";
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-size: 13px;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.arrow.up:hover:after {
+    visibility: visible;
+    background: #fd471e;
+    color: #FFF;
+    margin-left: 48px;
+}
+
+.submit-page #header-bottom-left {
+    top: inherit;
+    left: 0;
+    margin-left: 0;
+}
