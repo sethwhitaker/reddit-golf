@@ -97,6 +97,10 @@ div.titlebox span.number:after {
 #header-bottom-left {
     top: 31px;
 }
+
+#header .tabmenu:before {
+    background: rgba(39, 53, 17, 0.4);
+}
 /* End Addon */
 
 /* Addon: Custom Subreddit Title */
@@ -130,3 +134,4 @@ div.titlebox span.number:after {
     left: 0;
     margin-left: 0;
 }
+

@@ -53,7 +53,8 @@
 .flair-honma,
 .flair-spalding,
 .flair-vice,
-.flair-pxg {
+.flair-pxg,
+.flair-ksig {
   height: 14px;
   text-indent: 8px;
   margin: 0;
@@ -255,4 +256,8 @@
   padding: 0 4px 0 30px;
 }
 
+.flair-ksig {
+  background: #f5f5f5 url(%%sprite-flair%%) 0 -518px no-repeat;
+  padding: 0 4px 0 42px;
+}
 /* End Flair Styles */
