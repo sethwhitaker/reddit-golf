@@ -7,7 +7,7 @@ body {
 }
 /* Addon: Custom CSS Text */
 .arrow.down:after {
-    content: "Bogey";
+    content: "Bogey (Downvote)";
 }
 
 .arrow.up:after {
@@ -20,7 +20,7 @@ body {
     background: rgba($upvote, 0);
     border-radius: 2px;
     color: rgba(255,255,255,0);
-    content: "Birdie";
+    content: "Birdie (Upvote)";
     text-align: center;
     letter-spacing: 1px;
     font-weight: normal;
