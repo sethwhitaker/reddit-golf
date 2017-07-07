@@ -135,3 +135,24 @@ div.titlebox span.number:after {
     margin-left: 0;
 }
 
+
+.expando-button:hover{
+    background-color: $green;
+    border-color: $green;
+}
+@media only screen and (min-resolution: 2dppx), only screen and (-webkit-min-device-pixel-ratio: 2){
+    .expando-button.collapsed.selftext,
+    .expando-button.collapsed.video {
+        background-size: 264px 264px;
+        &:hover{
+            background-size: 264px 264px;
+        }
+    }
+    .expando-button.expanded.selftext,
+    .expando-button.expanded.video {
+        background-size: 264px 264px;
+        &:hover{
+            background-size: 264px 264px;
+        }
+    }
+}
