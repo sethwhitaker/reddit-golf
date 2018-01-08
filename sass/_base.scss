@@ -156,3 +156,233 @@ div.titlebox span.number:after {
         }
     }
 }
+
+#sr-header-area {
+    background: rgba(0,0,0,0.33);
+}
+
+#sr-header-area .sr-bar a,
+#sr-more-link,
+#sr-header-area .separator,
+#sr-header-area .dropdown.srdrop .selected {
+    color: rgba(255,255,255,0.6);
+    font-weight: bold;
+    &:hover{
+        color: rgba(255,255,255,1);
+    }
+}
+
+.user .userkarma {
+    font-weight: bold;
+    color: rgba(255,255,255,0.6);
+    font-size: 10px;
+}
+
+#header-bottom-right .user a:hover {
+    color: rgba(255,255,255, 1);
+}
+
+
+/* TV Logos */
+
+a[href="#CBS"],
+a[href="#NBC"],
+a[href="#GOLF"],
+a[href="#TNT"]{
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+a[href="#CBS"]{
+    background-image: url(%%tv-logos%%);
+    background-position: 0 0;
+    background-size: 16px;
+}
+a[href="#NBC"]{
+    background-image: url(%%tv-logos%%);
+    background-position: 0 -16px;
+    background-size: 16px;
+}
+a[href="#GOLF"]{
+    background-image: url(%%tv-logos%%);
+    background-position: 0 -32px;
+    background-size: 16px;
+}
+a[href="#TNT"]{
+    background-image: url(%%tv-logos%%);
+    background-position: 0 -48px;
+    background-size: 16px;
+}
+
+/* FLAGS */
+a[href^="#ctry-"]{
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%flags%%);
+    background-size: 16px;
+}
+
+a[href="#OIC"],
+a[href="#USA"],
+a[href="#EU"],
+a[href="#CAN"],
+a[href="#UK"],
+a[href="#AUS"],
+a[href="#NZL"],
+a[href="#ENG"],
+a[href="#NIR"],
+a[href="#SWE"],
+a[href="#DEN"],
+a[href="#ESP"],
+a[href="#SCO"],
+a[href="#IRL"],
+a[href="#ITA"],
+a[href="#BEL"],
+a[href="#FRA"],
+a[href="#RSA"],
+a[href="#AUT"],
+a[href="#MEX"],
+a[href="#GER"],
+a[href="#THA"],
+a[href="#CHN"],
+a[href="#JPN"],
+a[href="#KOR"],
+a[href="#VEN"]
+{
+    font-size: 0;
+    height: 16px;
+    width: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%flags%%);
+    background-size: 24px;
+}
+a[href="#OIC"]{
+    background-position: 0px 0px;
+}
+a[href="#USA"]{
+    background-position: 0px -16px;
+}
+a[href="#EU"]{
+    background-position: 0px -32px;
+}
+a[href="#CAN"]{
+    background-position: 0px -48px;
+}
+a[href="#UK"]{
+    background-position: 0px -63px;
+}
+a[href="#AUS"]{
+    background-position: 0px -79px;
+}
+a[href="#NZL"]{
+    background-position: 0px -94px;
+}
+a[href="#ENG"]{
+    background-position: 0px -111px;
+}
+a[href="#NIR"]{
+    background-position: 0px -126px;
+}
+a[href="#SWE"]{
+    background-position: 0px -142px;
+}
+a[href="#DEN"]{
+    background-position: 0px -142px;
+}
+a[href="#ESP"]{
+    background-position: 0px -174px;
+}
+a[href="#SCO"]{
+    background-position: 0px -189px;
+}
+a[href="#IRL"]{
+    background-position: 0px -205px;
+}
+a[href="#ITA"]{
+    background-position: 0px -221px;
+}
+a[href="#BEL"]{
+    background-position: 0px -236px;
+}
+a[href="#FRA"]{
+    background-position: 0px -252px;
+}
+a[href="#RSA"]{
+    background-position: 0px -267px;
+}
+a[href="#AUT"]{
+    background-position: 0px -284px;
+}
+a[href="#MEX"]{
+    background-position: 0px -299px;
+}
+a[href="#GER"]{
+    background-position: 0px -315px;
+}
+a[href="#THA"]{
+    background-position: 0px -331px;
+}
+a[href="#CHN"]{
+    background-position: 0px -347px;
+}
+a[href="#JPN"]{
+    background-position: 0px -363px;
+}
+a[href="#KOR"]{
+    background-position: 0px -378px;
+}
+a[href="#VEN"]{
+    background-position: 0px -394px;
+}
+
+
+/* Tables */
+.side .md table {
+    width: 100%;
+    thead {
+        background-color: $green;
+        color: white;
+        tr th{
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    }
+    tbody {
+        tr{
+            &:nth-child(even){
+                background-color: #f5f5f5;
+            }
+        }
+    }
+    &:nth-of-type(2){
+        thead th:first-child {
+            width: 35px;
+        }
+        thead th:last-child {
+            width: 50px;
+        }
+
+        tbody {
+            tr{
+                td:nth-child(2){
+                    strong{
+                        display: block;
+                    }
+                }
+            }
+        }
+        tr td:last-child {
+            padding-left: 0px;
+            padding-right: 0px;
+            a:first-child {
+                margin-right: 2px;
+            }
+        }
+    }
+}

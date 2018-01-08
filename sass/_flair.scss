@@ -54,7 +54,8 @@
 .flair-spalding,
 .flair-vice,
 .flair-pxg,
-.flair-ksig {
+.flair-ksig,
+.flair-underarmour {
   height: 14px;
   text-indent: 8px;
   margin: 0;
@@ -259,5 +260,9 @@
 .flair-ksig {
   background: #f5f5f5 url(%%flair-sprite%%) 0 -518px no-repeat;
   padding: 0 4px 0 42px;
+}
+.flair-underarmour {
+  background: #f5f5f5 url(%%flair-sprite%%) 0 -532px no-repeat;
+  padding: 0 4px 0 77px;
 }
 /* End Flair Styles */
