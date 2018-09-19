@@ -1,0 +1,388 @@
+body {
+	background-color: $light-green;
+}
+
+.link .entry .tagline a.author {
+    margin-right: 0.5em;
+}
+/* Addon: Custom CSS Text */
+.arrow.down:after {
+    content: "Bogey (Downvote)";
+}
+
+.arrow.up:after {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1000;
+    margin: -6px 0 0 32px;
+    padding: 12px;
+    background: rgba($upvote, 0);
+    border-radius: 2px;
+    color: rgba(255,255,255,0);
+    content: "Birdie (Upvote)";
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-size: 13px;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.arrow.up:hover:after {
+    visibility: visible;
+    background: rgba($upvote, 0.9);
+    color: rgba(255,255,255, 1);
+    margin-left: 48px;
+}
+
+div.titlebox span.number:after {
+    content: " Golfers";
+}
+
+.titlebox .users-online .number:after {
+    content: " On the Green";
+}
+/* End Addon */
+
+/* Addon: Custom Colors */
+/* Buttons */
+.morelink, .side .titlebox .md h3 a, .drop-choices a.choice:hover, .submit-page #newlink.submit.content ul.tabmenu.formtab,
+.submit_text.enabled.roundfield, body .btn, body button, .content .infobar {
+    background-color: $green;
+}
+
+    .morelink:hover, .side .titlebox .md h3 a:hover, .btn:hover, body button:hover {
+        background-color: lighten($green, 5%);
+    }
+
+    .morelink:active, .side .titlebox .md h3 a:active, .btn:active, body button:active {
+        background-color: darken($green, 5%);
+    }
+
+/* Links */
+.thing .title.loggedin.click, .thing .title.click, .thing .title.loggedin, .thing .title, .link .entry .buttons li a.comments,
+.link .entry .buttons li a.flairselectbtn, .link .entry .buttons li a:hover, .titlebox .tagline a.flairselectbtn, .md a,
+.side .titlebox .md h4 a, .wiki-page .wiki-page-content .md.wiki h4, .sidebox.create .morelink a, a, .side:after, .usertext .bottom-area a.reddiquette,
+.wiki-page .pageactions .wikiaction-current, .tagline .submitter, .combined-search-page .search-result .search-result-header .search-title,
+.combined-search-page .search-result a, .combined-search-page .search-result a > mark, .combined-search-page .search-result .search-comments,
+.flairselector h2, .linefield .title, body .content .sitetable .link .title a:hover, .link .entry .tagline a:hover, .comment .author:hover {
+    color: $green;
+}
+/* End Addon */
+
+
+/* Addon: Infobox ReColor */
+.side .titlebox h1.redditname:before {
+    background-color: $green;
+}
+
+.side .titlebox h1.redditname a, .titlebox span.subscribers {
+    color: #fff;
+}
+/* End Addon */
+
+
+/* Addon: Custom Snoo */
+#header-img.default-header, #header-img {
+    background: url(%%snoo%%) no-repeat 0px 0px;
+    padding-left: 80px;
+    height: 111px;
+}
+
+    #header-img.default-header:hover, #header-img:hover {
+        background-position: 0px 0px;
+    }
+
+#header-bottom-left {
+    top: 31px;
+}
+
+#header .tabmenu:before {
+    background: rgba(39, 53, 17, 0.4);
+}
+/* End Addon */
+
+/* Addon: Custom Subreddit Title */
+/* This is the one in the header */
+#header .pagename a {
+    height: 111px;
+    width: 235px;
+    background-image: url(%%title%%);
+    background-repeat: no-repeat;
+    background-size: auto 222px;
+    text-indent: -9999px;
+    &:hover{
+        background-position: 0 -111px;
+    }
+}
+
+/* This is the one in the sidebar */
+.side .titlebox h1.redditname a {
+    display: block;
+    height: 22px;
+    width: 176px;
+    background-image: url(%%title-sidebar%%);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    text-indent: -9999px;
+}
+/* End Addon */
+
+.submit-page #header-bottom-left {
+    top: inherit;
+    left: 0;
+    margin-left: 0;
+}
+
+
+.expando-button:hover{
+    background-color: $green;
+    border-color: $green;
+}
+@media only screen and (min-resolution: 2dppx), only screen and (-webkit-min-device-pixel-ratio: 2){
+    .expando-button.collapsed.selftext,
+    .expando-button.collapsed.video {
+        background-size: 264px 264px;
+        &:hover{
+            background-size: 264px 264px;
+        }
+    }
+    .expando-button.expanded.selftext,
+    .expando-button.expanded.video {
+        background-size: 264px 264px;
+        &:hover{
+            background-size: 264px 264px;
+        }
+    }
+}
+
+#sr-header-area {
+    background: rgba(0,0,0,0.33);
+}
+
+#sr-header-area .sr-bar a,
+#sr-more-link,
+#sr-header-area .separator,
+#sr-header-area .dropdown.srdrop .selected {
+    color: rgba(255,255,255,0.6);
+    font-weight: bold;
+    &:hover{
+        color: rgba(255,255,255,1);
+    }
+}
+
+.user .userkarma {
+    font-weight: bold;
+    color: rgba(255,255,255,0.6);
+    font-size: 10px;
+}
+
+#header-bottom-right .user a:hover {
+    color: rgba(255,255,255, 1);
+}
+
+
+/* TV Logos */
+
+a[href="#CBS"],
+a[href="#NBC"],
+a[href="#GOLF"],
+a[href="#TNT"]{
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+a[href="#CBS"]{
+    background-image: url(%%tv-logos%%);
+    background-position: 0 0;
+    background-size: 16px;
+}
+a[href="#NBC"]{
+    background-image: url(%%tv-logos%%);
+    background-position: 0 -16px;
+    background-size: 16px;
+}
+a[href="#GOLF"]{
+    background-image: url(%%tv-logos%%);
+    background-position: 0 -32px;
+    background-size: 16px;
+}
+a[href="#TNT"]{
+    background-image: url(%%tv-logos%%);
+    background-position: 0 -48px;
+    background-size: 16px;
+}
+
+/* FLAGS */
+a[href^="#ctry-"]{
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%flags%%);
+    background-size: 16px;
+}
+
+a[href="#OIC"],
+a[href="#USA"],
+a[href="#EU"],
+a[href="#CAN"],
+a[href="#UK"],
+a[href="#AUS"],
+a[href="#NZL"],
+a[href="#ENG"],
+a[href="#NIR"],
+a[href="#SWE"],
+a[href="#DEN"],
+a[href="#ESP"],
+a[href="#SCO"],
+a[href="#IRL"],
+a[href="#ITA"],
+a[href="#BEL"],
+a[href="#FRA"],
+a[href="#RSA"],
+a[href="#AUT"],
+a[href="#MEX"],
+a[href="#GER"],
+a[href="#THA"],
+a[href="#CHN"],
+a[href="#JPN"],
+a[href="#KOR"],
+a[href="#VEN"]
+{
+    font-size: 0;
+    height: 16px;
+    width: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%flags%%);
+    background-size: 24px;
+}
+a[href="#OIC"]{
+    background-position: 0px 0px;
+}
+a[href="#USA"]{
+    background-position: 0px -16px;
+}
+a[href="#EU"]{
+    background-position: 0px -32px;
+}
+a[href="#CAN"]{
+    background-position: 0px -48px;
+}
+a[href="#UK"]{
+    background-position: 0px -63px;
+}
+a[href="#AUS"]{
+    background-position: 0px -79px;
+}
+a[href="#NZL"]{
+    background-position: 0px -94px;
+}
+a[href="#ENG"]{
+    background-position: 0px -111px;
+}
+a[href="#NIR"]{
+    background-position: 0px -126px;
+}
+a[href="#SWE"]{
+    background-position: 0px -142px;
+}
+a[href="#DEN"]{
+    background-position: 0px -142px;
+}
+a[href="#ESP"]{
+    background-position: 0px -174px;
+}
+a[href="#SCO"]{
+    background-position: 0px -189px;
+}
+a[href="#IRL"]{
+    background-position: 0px -205px;
+}
+a[href="#ITA"]{
+    background-position: 0px -221px;
+}
+a[href="#BEL"]{
+    background-position: 0px -236px;
+}
+a[href="#FRA"]{
+    background-position: 0px -252px;
+}
+a[href="#RSA"]{
+    background-position: 0px -267px;
+}
+a[href="#AUT"]{
+    background-position: 0px -284px;
+}
+a[href="#MEX"]{
+    background-position: 0px -299px;
+}
+a[href="#GER"]{
+    background-position: 0px -315px;
+}
+a[href="#THA"]{
+    background-position: 0px -331px;
+}
+a[href="#CHN"]{
+    background-position: 0px -347px;
+}
+a[href="#JPN"]{
+    background-position: 0px -363px;
+}
+a[href="#KOR"]{
+    background-position: 0px -378px;
+}
+a[href="#VEN"]{
+    background-position: 0px -394px;
+}
+
+
+/* Tables */
+.side .md table {
+    width: 100%;
+    thead {
+        background-color: $green;
+        color: white;
+        tr th{
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    }
+    tbody {
+        tr{
+            &:nth-child(even){
+                background-color: #f5f5f5;
+            }
+        }
+    }
+    &:nth-of-type(2){
+        thead th:first-child {
+            width: 35px;
+        }
+        thead th:last-child {
+            width: 50px;
+        }
+
+        tbody {
+            tr{
+                td:nth-child(2){
+                    strong{
+                        display: block;
+                    }
+                }
+            }
+        }
+        tr td:last-child {
+            padding-left: 0px;
+            padding-right: 0px;
+            a:first-child {
+                margin-right: 2px;
+            }
+        }
+    }
+}

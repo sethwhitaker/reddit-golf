@@ -1,0 +1,33 @@
+/* --- Addon: Linkflair Example --- */
+
+.linkflair .linkflairlabel{
+	margin-left: 10px;
+}
+
+.linkflair-witb .linkflairlabel {
+    background-color: #ed7149;
+}
+
+.linkflair-witb .thumbnail.self {
+    // background: url(%%examplethumbnail%%) 0px 0px;/* 80px x 56px */
+}
+
+.post-linkflair-witb .side:before {
+    background-image: url(%%linkflair-witb%%);
+}
+
+
+.linkflair-tour .linkflairlabel {
+    background-color: #003672;
+}
+.post-linkflair-tour .side:before {
+    background-image: url(%%linkflair-tour%%);
+}
+
+
+.linkflair-scorecard .linkflairlabel {
+    background-color: #f12a2a;
+}
+.post-linkflair-scorecard .side:before {
+    background-image: url(%%linkflair-scorecard%%);
+}
